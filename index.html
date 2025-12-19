@@ -17,8 +17,36 @@
       font-style: normal;
     }
   </style>
+  <script>
+    function view(){
+      const list = [
+        "https://gmin03133-dotcom.github.io/ui/",
+        "https://agii990114-ctrl.github.io/portfolio/",
+        "https://x2bjvhmmwg-gif.github.io/all-file/",
+        "https://mpsddd-commits.github.io/frontui/",
+        "https://jtw8983.github.io/UI/",
+        "https://frankie516c-collab.github.io/UI/",
+        "https://choegayoung.github.io/UI/",
+        "https://santacoyaki11-jpg.github.io/my.ui.list/",
+        "https://choiyc05.github.io/UI/",
+        "https://namyoungjun.github.io/uiux/"
+      ];
+      let html = "";
+      for(const url of list) {
+        html += `<div class="col-sm-3 my-4 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">FrontEnd</h5>
+                <a href="${url}" class="btn btn-primary">Go Web Page</a>
+              </div>
+            </div>
+          </div>`;
+      }
+      document.querySelector("#studys").innerHTML = html;
+    }
+  </script>
 </head>
-<body>
+<body onload="view()">
   <header class="container-fluid text-center my-3">
     <h1 class="h1 sekuya-regular">
       UI<span class="text-danger fw-bold">/</span>UX
@@ -47,6 +75,16 @@
           <small>front-end</small>
         </a>
 
+      </div>
+
+    </section>
+
+    <section class="container mt-3">
+
+      <div class="row" id="studys">
+        
+        
+        
       </div>
 
     </section>
